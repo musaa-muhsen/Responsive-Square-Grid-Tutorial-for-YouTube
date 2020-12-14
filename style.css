@@ -1,0 +1,37 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: sans-serif;
+}
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+section.container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 33.333333333%);
+    
+}
+.square {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.square:nth-child(odd) {
+background: lightsalmon;
+background-image: url('sqr1.jpg');
+background-repeat: no-repeat;
+background-size: cover;
+position: relative;
+}
+.square:nth-child(even) {
+    /* background: lightseagreen; */
+    
+}
